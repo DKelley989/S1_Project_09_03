@@ -11,7 +11,7 @@
       Author: Dylan Kelley
       Date:   1.22.19
 
-      Filename:   wm_demo.html
+      Filename: index.html
 
    -->
 
@@ -72,7 +72,9 @@
     <section>
         <h1>CSS Demo</h1>
 
+        <!-- CSS Demo Form -->
         <form action="" method="">
+            <!-- Text box that displays the placeholder text "Enter sample text and press the Tab key". -->
             <textarea name="sampleText" id="sampleBox" tabindex="1" wrap="hard" placeholder="Enter sample text and press the Tab key"
                 autofocus>
             </textarea>
@@ -81,12 +83,15 @@
                 box.
             </p>
 
+            <!-- Fieldset 1 - Fonts -->
             <fieldset>
                 <legend>Fonts</legend>
 
                 <label for="fontfamily">Font Family</label>
+                <!-- Font family selection list -->
                 <select name="fontfamily" id="fontfamily">
-                    <optgroup id="generic">
+                    <!-- Generic fonts -->
+                    <optgroup label="Generic">
                         <option value="default">default</option>
                         <option value="serif">serif</option>
                         <option value="sans-serif">sans-serif</option>
@@ -94,7 +99,8 @@
                         <option value="cursive">cursive</option>
                         <option value="fantasy">fantasy</option>
                     </optgroup>
-                    <optgroup id="specific">
+                    <!-- Specific fonts -->
+                    <optgroup label="Specific">
                         <option value="Arial">Arial</option>
                         <option value="'Book Antiqua'">'Book Antiqua'</option>
                         <option value="'Courier New'">'Courier New'</option>
@@ -108,6 +114,7 @@
                 </select>
 
                 <label for="fontstyle">Font Style</label>
+                <!-- Font style selection list -->
                 <select name="fontstyle" id="fontstyle">
                     <option value="normal">normal</option>
                     <option value="italic">italic</option>
@@ -115,12 +122,14 @@
                 </select>
 
                 <label for="fontweight">Font Weight</label>
+                <!-- Font weight selection list -->
                 <select name="fontweight" id="fontweight">
                     <option value="normal">normal</option>
                     <option value="bold">bold</option>
                 </select>
 
                 <label for="textdecoration">Text Decoration</label>
+                <!-- Text decoration selection list -->
                 <select name="textdecoration" id="textdecoration">
                     <option value="none">none</option>
                     <option value="line-through">line-through</option>
@@ -129,6 +138,7 @@
                 </select>
 
                 <label for="texttransform">Text Transform</label>
+                <!-- Text transform selection list -->
                 <select name="texttransform" id="texttransform">
                     <option value="none">none</option>
                     <option value="capitalize">capitalize</option>
@@ -137,26 +147,34 @@
                 </select>
 
                 <label for="fontvarient">Font Varient</label>
+                <!-- Font varient selection list -->
                 <select name="fontvarient" id="fontvarient">
                     <option value="normal">normal</option>
                     <option value="small-caps">small-caps</option>
                 </select>
             </fieldset>
+            <!-- Fieldset 1 end -->
 
+            <!-- Fieldset 2 - Colors -->
             <fieldset>
                 <legend>Colors</legend>
 
                 <label for="color">Font Color (hexadecimal)</label>
+                <!-- Color control for font color -->
                 <input type="color" name="color" id="color" value="#000000" />
 
                 <label for="backgroundcolor">Background Color (hexadecimal)</label>
+                <!-- Color control for background color -->
                 <input type="color" name="backgroundcolor" id="backgroundcolor" placeholder="#rrggbb" value="#FFFFFF" />
             </fieldset>
+            <!-- Fieldset 2 end -->
 
+            <!-- Fieldset 3 - Sizes -->
             <fieldset>
                 <legend>Sizes</legend>
 
                 <label for="fontsize">Font Size (px)</label>
+                <!-- Font size slider -->
                 <div class="slider">
                     8
                     <input type="range" name="fontsize" id="fontsize" min="8" max="40" step="1" value="14" />
@@ -164,6 +182,7 @@
                 </div>
 
                 <label for="letterspacing">Letter Spacing (px)</label>
+                <!-- Letter spacing slider -->
                 <div class="slider">
                     0
                     <input type="range" name="letterspacing" id="letterspacing" min="0" max="10" step="1" value="0" />
@@ -171,6 +190,7 @@
                 </div>
 
                 <label for="wordspacing">Word Spacing (px)</label>
+                <!-- Word spacing slider -->
                 <div class="slider">
                     0
                     <input type="range" name="wordspacing" id="wordspacing" min="0" max="10" step="1" value="0" />
@@ -178,6 +198,7 @@
                 </div>
 
                 <label for="lineheight">Line Height (em)</label>
+                <!-- Line height slider -->
                 <div class="slider">
                     0
                     <input type="range" name="lineheight" id="lineheight" min="0" max="4" step="0.2" value="1" />
@@ -185,13 +206,16 @@
                 </div>
 
                 <label for="textindent">Text Indent (px)</label>
+                <!-- Text indent slider -->
                 <div class="slider">
                     0
                     <input type="range" name="textindent" id="textindent" min="0" max="10" step="1" value="0" />
                     10
                 </div>
             </fieldset>
+            <!-- Fieldset 3 end -->
         </form>
+        <!-- CSS Demo form end -->
 
         <h2>Rendered Text</h2>
         <div id="output"></div>
